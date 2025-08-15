@@ -20,6 +20,7 @@ const (
 	ChillGuy
 	Butterfly
 	RedFlag
+	Circle
 )
 
 // ShapeStrings maps the enum to its string representation.
@@ -31,6 +32,7 @@ var ShapeStrings = map[Shape]string{
 	ChillGuy:      "chill-guy",
 	Butterfly:     "butterfly",
 	RedFlag:       "red-flag",
+	Circle:        "circle",
 }
 
 // StringShapes maps the string to its shape representation.
@@ -42,6 +44,7 @@ var StringShapes = map[string]Shape{
 	"chill-guy":      ChillGuy,
 	"butterfly":      Butterfly,
 	"red-flag":       RedFlag,
+	"circle":         Circle,
 }
 
 func main() {
@@ -87,6 +90,8 @@ func main() {
 		shapes.Butterfly()
 	case RedFlag:
 		shapes.RedFlag()
+	case Circle:
+		shapes.Circle(shapeSize)
 	}
 }
 

@@ -2,6 +2,7 @@ package shapes
 
 import (
 	"fmt"
+	"math"
 	"strings"
 )
 
@@ -95,6 +96,21 @@ func ChillGuy() {
 
 func RedFlag() {
 	fmt.Println("🚩")
+}
+
+// Circle prints a circle.
+func Circle(radius int) {
+	for y := -radius; y <= radius; y++ {
+		for x := -radius; x <= radius; x++ {
+			distance := math.Sqrt(float64(x*x + y*y))
+			if distance >= float64(radius)-0.5 && distance <= float64(radius)+0.5 {
+				fmt.Print("*")
+			} else {
+				fmt.Print(" ")
+			}
+		}
+		fmt.Println()
+	}
 }
 
 func Star() {
