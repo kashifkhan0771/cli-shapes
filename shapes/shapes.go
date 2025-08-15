@@ -96,3 +96,17 @@ func ChillGuy() {
 func RedFlag() {
 	fmt.Println("🚩")
 }
+
+func Star() {
+	fmt.Print(`
+    *   *    
+   *     *   
+  *       *  
+ *         * 
+*************
+ *         * 
+  *       *  
+   *     *   
+    *   *    
+`)
+}

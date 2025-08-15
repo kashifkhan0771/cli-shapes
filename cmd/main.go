@@ -16,6 +16,7 @@ const (
 	Triangle Shape = iota
 	RightTriangle
 	Diamond
+	Star
 	ChillGuy
 	Butterfly
 	RedFlag
@@ -26,6 +27,7 @@ var ShapeStrings = map[Shape]string{
 	Triangle:      "triangle",
 	RightTriangle: "right-triangle",
 	Diamond:       "diamond",
+	Star:          "star",
 	ChillGuy:      "chill-guy",
 	Butterfly:     "butterfly",
 	RedFlag:       "red-flag",
@@ -36,6 +38,7 @@ var StringShapes = map[string]Shape{
 	"triangle":       Triangle,
 	"right-triangle": RightTriangle,
 	"diamond":        Diamond,
+	"star":           Star,
 	"chill-guy":      ChillGuy,
 	"butterfly":      Butterfly,
 	"red-flag":       RedFlag,
@@ -76,6 +79,8 @@ func main() {
 		shapes.RightTriangle(shapeSize)
 	case Diamond:
 		shapes.Diamond(shapeSize)
+	case Star:
+		shapes.Star()
 	case ChillGuy:
 		shapes.ChillGuy()
 	case Butterfly:
