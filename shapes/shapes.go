@@ -2,8 +2,8 @@ package shapes
 
 import (
 	"fmt"
-	"strings"
 	"math"
+	"strings"
 )
 
 /*
@@ -111,4 +111,18 @@ func Circle(radius int) {
 		}
 		fmt.Println()
 	}
+}
+
+func Star() {
+	fmt.Print(`
+    *   *    
+   *     *   
+  *       *  
+ *         * 
+*************
+ *         * 
+  *       *  
+   *     *   
+    *   *    
+`)
 }
